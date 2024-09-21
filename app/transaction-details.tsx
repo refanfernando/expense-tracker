@@ -1,0 +1,25 @@
+import { Stack } from "expo-router";
+import { StyleSheet } from "react-native";
+import FormInputTransaction from "@/screens/manage-transaction/FormInputTransaction";
+
+export default function SectionTransactionDetails() {
+  return (
+    <>
+      <Stack.Screen options={{ title: "Detail" }} />
+      <FormInputTransaction />
+    </>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 20,
+  },
+  link: {
+    marginTop: 15,
+    paddingVertical: 15,
+  },
+});
